@@ -5,8 +5,8 @@ You need this library too:
 https://github.com/crankyoldgit/IRremoteESP8266
 
 I used IR Dump V3 (contained in the above library) on an Arduino with a RF receiver to discover that the remote control for the light used the NEC format.              
-I made a note of some colors, and the "On" and "Off" key.
-Note that the only value returned from IRDump is the RAW VALUE. Not the channel/ID as these are also included in the short "raw value". (They're embedded in some bits of the bytes of the raw value, so aren't obviously within the raw data values! This led me astray for a bit, as I wondered how I was supposed to send them to the relevant device!)
+I made a note of some colors, and the "On" and "Off" key.                         
+Note that the only value returned from IRDump is the DATA value. Not the address/command as these are also included in the slightly longer data value. (They're embedded in some bits of the bytes of the data value, so aren't obvious. This led me astray for a bit, as I wondered how I was supposed to send them to the relevant device!)
 
 When you come to find the values of your own remote controls, note that these lines of information aren't needed from the IR Dump program, as they're contained in the "data" line at the bottom:
 uint32_t address = 0x0;             
