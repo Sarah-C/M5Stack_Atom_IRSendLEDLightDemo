@@ -1,5 +1,7 @@
 # M5Stack Atom: IR Send, LED Light Demo
-A VERY simple LED light controller (just a fixed demo) with a synchronised Atom button LED.
+A VERY simple LED light controller (just a fixed demo) with a synchronised Atom button LED.       
+As the Atom changes its button color, the LED light changes to the same color in a repeating sequence.        
+I found this setup was the easiest way to check I was using the IR Dump program and transmit code correctly!         
 
 You need this library too:
 https://github.com/crankyoldgit/IRremoteESP8266
