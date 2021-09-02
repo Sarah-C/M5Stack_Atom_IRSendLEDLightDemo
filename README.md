@@ -24,7 +24,7 @@ M5Stack Atom Lite: https://shop.m5stack.com/products/atom-lite-esp32-development
 
 
 
-![20210902_113955](https://user-images.githubusercontent.com/1586332/131835960-ce7c9353-8980-467d-a2c9-7573dfb75346.jpg)
+![Atom Demo](https://user-images.githubusercontent.com/1586332/131835960-ce7c9353-8980-467d-a2c9-7573dfb75346.jpg)
 
-
+![The light used](https://user-images.githubusercontent.com/1586332/131837809-d3c76dae-69fc-40ee-8dbc-53d3f6897f91.jpg)
 
