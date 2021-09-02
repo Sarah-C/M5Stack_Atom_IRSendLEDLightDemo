@@ -11,7 +11,6 @@ Note that the only value returned from IRDump is the DATA value. Not the address
 When you come to find the values of your own remote controls, note that these lines of information aren't needed from the IR Dump program, as they're contained in the "data" line at the bottom:             
 uint32_t address = 0x0; << Ignore this line                 
 uint32_t command = 0x1; << Ignore this line                  
-
 ...... are in here:                  
 uint64_t data = 0xFF807F; << Just transmit this line's data        
 
