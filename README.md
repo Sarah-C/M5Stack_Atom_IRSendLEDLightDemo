@@ -1,5 +1,5 @@
 # M5Stack Atom: IR Send, LED Light Demo
-A very simple LED light controller with a synchronised Atom button LED.
+A VERY simple LED light controller (just a fixed demo) with a synchronised Atom button LED.
 
 You need this library too:
 https://github.com/crankyoldgit/IRremoteESP8266
