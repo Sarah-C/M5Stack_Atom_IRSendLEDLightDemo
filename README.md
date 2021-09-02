@@ -8,15 +8,14 @@ I used IR Dump V3 on an Arduino with a RF receiver to discover that the remote c
 I made a note of some colors, and the "On" and "Off" key.
 Note that the only value returned from IRDump is the RAW VALUE. Not the channel/ID as these are also included in the short "raw value". (They're embedded in some bits of the bytes of the raw value, so aren't obviously within the raw data values! This led me astray for a bit, as I wondered how I was supposed to send them to the relevant device!)
 
-These bits aren't needed from the IR Dump program, as they're contained in "data":
+When you come to find the values of your own remote controls, note that these lines of information aren't needed from the IR Dump program, as they're contained in the "data" line at the bottom:
 uint32_t address = 0x0;             
 uint32_t command = 0x1;        
 
 ...... are in here:                  
 uint64_t data = 0xFF807F;         
 
-Demo:           
-https://www.youtube.com/watch?v=lZ-aN4xiOvA
+Demo: https://www.youtube.com/watch?v=lZ-aN4xiOvA
 
 Light: https://www.amazon.co.uk/gp/product/B094NGFXTX/
 
