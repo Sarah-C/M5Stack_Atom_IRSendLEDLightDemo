@@ -8,12 +8,12 @@ I used IR Dump V3 (contained in the above library) on an Arduino with a RF recei
 I made a note of some colors, and the "On" and "Off" key.                         
 Note that the only value returned from IRDump is the DATA value. Not the address/command as these are also included in the slightly longer data value. (They're embedded in some bits of the bytes of the data value, so aren't obvious. This led me astray for a bit, as I wondered how I was supposed to send them to the relevant device!)
 
-When you come to find the values of your own remote controls, note that these lines of information aren't needed from the IR Dump program, as they're contained in the "data" line at the bottom:
-uint32_t address = 0x0;             
-uint32_t command = 0x1;        
+When you come to find the values of your own remote controls, note that these lines of information aren't needed from the IR Dump program, as they're contained in the "data" line at the bottom:             
+uint32_t address = 0x0; << Ignore this line                 
+uint32_t command = 0x1; << Ignore this line                  
 
 ...... are in here:                  
-uint64_t data = 0xFF807F;         
+uint64_t data = 0xFF807F; << Just transmit this line's data        
 
 Demo: https://www.youtube.com/watch?v=lZ-aN4xiOvA
 
